@@ -16,7 +16,7 @@
           <th>Counts</th>
         </tr>
         <tr>
-          {% for key, value in methods_counts.items() %}
+          {% for key, value in text.items() %}
           <td>{{ key|e }}</td>
           <td>{{ value|e }}</td>
           {% endfor %}
@@ -24,7 +24,7 @@
       </table>
 
       <dl>
-        {% for key, value in methods_counts.items() %}
+        {% for key, value in text.items() %}
             <dt>{{ key }}</dt>
             <dd>{{ value }}</dd>
         {% endfor %}

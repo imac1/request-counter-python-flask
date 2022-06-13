@@ -19,8 +19,9 @@ def main_page():
 
 @app.route('/statistics')
 def statistics_page():
-    global methods_counts
-    return render_template('statistics.html', methods_counts=methods_counts)
+    with open("request_counts.txt", 'w') as f:
+        f.write(str(methods_counts))
+    return render_template('statistics.html', text=methods_counts)
 
 @app.route('/request-counter', methods=['POST'])
 def post_counter():
@@ -46,8 +47,6 @@ def delete_counter():
     global methods_counts
     methods_counts["DELETE"] += 1
     return redirect('/')
-
-
 
 
 if __name__ == "__main__":
