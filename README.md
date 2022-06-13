@@ -52,8 +52,8 @@ None
 
 ## Background materials
 
-- <i class="far fa-exclamation"></i> [Pip and VirtualEnv](project/curriculum/materials/pages/python/pip-and-virtualenv.md)
-- <i class="far fa-exclamation"></i> [A web-framework for Python: Flask](project/curriculum/materials/pages/python/python-flask.md)
+- <i class="far fa-exclamation"></i> [Pip and VirtualEnv]
+- <i class="far fa-exclamation"></i> [A web-framework for Python: Flask]
 - <i class="far fa-book-open"></i> [Flask documentation](http://flask.palletsprojects.com/) (the Quickstart gives a good overview)
 - <i class="far fa-book-open"></i> [Install Curl](https://www.howtoinstall.co/en/ubuntu/xenial/curl)
 - <i class="far fa-book-open"></i> [Example to test DELETE/PUT request](https://www.garron.me/en/bits/curl-delete-request.html)

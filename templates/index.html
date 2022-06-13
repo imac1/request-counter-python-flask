@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HTML up to version 4 only defines the use of POST and GET for forms.
+         HTML5 at this time appears as though it 
+        may support the further methods. 
+        [note, support is not included in the current w3 draft] -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <form action="/request-counter" , method="post">
+        <input type="submit">
+    </form>
+    <br>
+    <a href="/request-counter" , method="get">{{ 'Add' if methods_counts is none else 'GET' }} request</a>
+    <br>
+    <a href="/request-counter" , method="post">{{ 'Add' if methods_counts is none else 'POST' }} request</a>
+    <br>
+
+
+    <form action="/statistics" method="get">
+        <button type="submit"  method="get">Submit using GET</button>
+        <button type="submit"  method="post">Submit using POST</button>
+    </form>
+    <nav>
+        <a href="{{ url_for('statistics_page') }}">statistics</a>
+        <br>
+        <a href="{{ url_for('post_counter') }}">request-counter</a>
+    </nav>
+</body>
+
+</html>
